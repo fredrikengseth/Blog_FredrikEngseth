@@ -6,6 +6,7 @@
           <h2 v-html="node.title"/>
         </router-link>
         <span v-html="node.date"/>
+        <span v-html="node.author"/>
         <div v-html="node.description"/>
       </li>
     </ul>
@@ -20,6 +21,7 @@
           _id
           title
           date (format: "D MMMM, YYYY")
+          author
           description
           path
         }

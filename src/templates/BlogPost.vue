@@ -3,6 +3,7 @@
     <div class="article">
       <h1>{{ $page.blogPost.title }}</h1>
       <span>{{ $page.blogPost.date }}</span>
+      <span>{{ $page.blogPost.author }}</span>
       <g-image :src="$page.blogPost.image"/>
       <div class="content" v-html="$page.blogPost.content" />
     </div>
@@ -24,6 +25,7 @@ export default {
     blogPost (path: $path) {
       title
       date (format: "D MMMM, YYYY")
+      author
       content
       image
     }
