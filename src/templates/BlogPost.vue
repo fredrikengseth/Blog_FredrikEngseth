@@ -3,7 +3,7 @@
     <div class="article">
       <h1>{{ $page.blogPost.title }}</h1>
       <span>{{ $page.blogPost.date }} - </span>
-      <span>{{ $page.blogPost.author }}</span>
+      <span>By {{ $page.blogPost.author }}</span>
       <g-image :src="$page.blogPost.image"/>
       <div class="content" v-html="$page.blogPost.content" />
     </div>
