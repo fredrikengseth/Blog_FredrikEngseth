@@ -66,7 +66,7 @@ body {
 }
 
 /* Setting style to Disqus */
-.layout div#disqus_thread {
+.layout, div#disqus_thread {
   max-width: 600px;
   margin: 0 auto;
   padding-left: 20px;
